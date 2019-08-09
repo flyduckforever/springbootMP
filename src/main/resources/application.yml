@@ -1,0 +1,19 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: mybatis-plus-curd
+
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/springboot?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    servlet:
+      load-on-startup: 1
+mybatis-plus:
+  type-aliases-package: com.biz.pojo
+  mapper-locations: classpath:mapper/*.xml
+
