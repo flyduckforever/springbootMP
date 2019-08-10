@@ -5,6 +5,6 @@
 <mapper namespace="com.biz.mapper.HeroMapper">
 
     <select id="getAllHero" resultType="com.biz.pojo.Hero">
-        select * from `tb_hero`;
+        select * from `tb_hero`
     </select>
 </mapper>
